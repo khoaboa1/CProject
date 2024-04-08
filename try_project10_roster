@@ -1,0 +1,133 @@
+# Author: Jing Wang, for Program Design
+# try_project9_roster is a Unix shell script that will be used to test project 8.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project9_roster
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_project9_roster
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+a
+jameis
+winston
+sp_winston@gmail.com
+violin
+string concertino
+a
+stina
+tanja
+stina_8811@hotmail.com
+cello
+symphonic strings
+a
+martin
+doug
+1987tec@yahoo.com
+viola
+symphonic strings
+a
+martin
+doug
+mdoug@google.com
+violin
+symphonic strings
+a
+ari
+anahit
+hello_789@gmail.com
+bass
+symphony orchestra
+p
+r
+martin
+doug
+1987tec@yahoo.com
+p
+r
+stina
+tanja
+stina@hotmail.com
+r
+jameis
+winston
+sp_winston@gmail.com
+p
+q
+EndOfInput
+echo 'Beginning Expected Output:'
+echo '==========================================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter student last name: jameis'
+echo 'Enter student first name: winston'
+echo 'Enter email address: sp_winston@gmail.com'
+echo 'Enter instrument: violin'
+echo 'Enter group: string concertino'
+echo 'Enter operation code: a'
+echo 'Enter student last name: stina'
+echo 'Enter student first name: tanja'
+echo 'Enter email address: stina_8811@hotmail.com'
+echo 'Enter instrument: cello'
+echo 'Enter group: symphonic strings'
+echo 'Enter operation code: a'
+echo 'Enter student last name: martin'
+echo 'Enter student first name: doug'
+echo 'Enter email address: 1987tec@yahoo.com'
+echo 'Enter instrument: viola'
+echo 'Enter group: symphonic strings'
+echo 'Enter operation code: a'
+echo 'Enter student last name: martin'
+echo 'Enter student first name: doug'
+echo 'Enter email address: mdoug@google.com'
+echo 'Enter instrument: violin'
+echo 'Enter group: symphonic strings'
+echo 'Enter operation code: a'
+echo 'Enter student last name: ari'
+echo 'Enter student first name: anahit'
+echo 'Enter email address: hello_789@gmail.com'
+echo 'Enter instrument: bass'
+echo 'Enter group: symphony orchestra'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo -e 'jameis      winston     sp_winston@gmail.com          violin    string concertino
+stina       tanja       stina_8811@hotmail.com        cello     symphonic strings    
+martin      doug        1987tec@yahoo.com             viola     symphonic strings    
+martin      doug        mdoug@google.com              violin    symphonic strings    
+ari         anahit      hello_789@gmail.com           bass      symphony orchestra' 
+echo '==========================================================================='
+echo 'Enter operation code: r'
+echo 'Enter student last name: martin'
+echo 'Enter student first name: doug'
+echo 'Etner student email: 1987tec@yahoo.com'
+echo -e 'martin      doug        1987tec@yahoo.com             viola     symphonic strings
+removed'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo -e 'jameis      winston     sp_winston@gmail.com          violin    string concertino 
+stina       tanja       stina_8811@hotmail.com        cello     symphonic strings    
+martin      doug        mdoug@google.com              violin    symphonic strings    
+ari         anahit      hello_789@gmail.com           bass      symphony orchestra' 
+echo '==========================================================================='
+echo 'Enter operation code: r'
+echo 'Enter student last name: stina'
+echo 'Enter student first name: tanja'
+echo 'Enter studetn email: stina@hotmail.com'
+echo 'Student not found'
+echo '==========================================================================='
+echo 'Enter operation code: r'
+echo 'Enter student last name: jameis'
+echo 'Enter student first name: winston'
+echo 'Enter email address: sp_winston@gmail.com'
+echo 'jameis winston sp_winston@gmail.com violin string concertino removed.'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo -e 'stina       tanja       stina_8811@hotmail.com        cello     symphonic strings    
+martin      doug        mdoug@google.com              violin    symphonic strings    
+ari         anahit      hello_789@gmail.com           bass      symphony orchestra' 
+echo '==========================================================================='
+echo 'Enter operation code: q'

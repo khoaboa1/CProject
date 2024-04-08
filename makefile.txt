@@ -1,0 +1,10 @@
+project10_roster: project10_roster.o student.o readline.o
+	gcc -o project10_roster project10_roster.o readline.o student.o
+project10_roster.o: project10_roster.c readline.h student.h
+	gcc -c project10_roster.c
+student.o: student.c student.h readline.h
+	gcc -c student.c
+readline.o: readline.c readline.h
+	gcc -c readline.c
+clean:
+	rm project10_roster project10_roster.o student.o readline.o
